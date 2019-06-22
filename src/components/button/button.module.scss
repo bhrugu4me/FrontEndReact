@@ -1,0 +1,363 @@
+@import "../../css/utils.scss";
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	padding: 6px 24px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+	color: #333;
+	text-decoration: none
+}
+
+.btn.active,
+.btn:active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	opacity: .65;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+a.btn.disabled,
+fieldset[disabled] a.btn {
+	pointer-events: none
+}
+
+.btndefault {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc
+}
+
+.btndefault.focus,
+.btndefault:focus {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #8c8c8c
+}
+
+.btndefault:hover {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #adadad
+}
+
+.btndefault.active,
+.btndefault:active,
+.open>.dropdown-toggle.btndefault {
+	color: #333;
+	background-color: #e6e6e6;
+	background-image: none;
+	border-color: #adadad
+}
+
+.btndefault.active.focus,
+.btndefault.active:focus,
+.btndefault.active:hover,
+.btndefault:active.focus,
+.btndefault:active:focus,
+.btndefault:active:hover {
+	color: #333;
+	background-color: #d4d4d4;
+	border-color: #8c8c8c
+}
+
+.btndefault.disabled.focus,
+.btndefault.disabled:focus,
+.btndefault.disabled:hover,
+.btndefault[disabled].focus,
+.btndefault[disabled]:focus,
+.btndefault[disabled]:hover,
+fieldset[disabled] .btndefault.focus,
+fieldset[disabled] .btndefault:focus,
+fieldset[disabled] .btndefault:hover {
+	background-color: #fff;
+	border-color: #ccc
+}
+
+.btnprimary {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4
+}
+
+.btnprimary.focus,
+.btnprimary:focus {
+	color: #fff;
+	background-color: #286090;
+	border-color: #122b40
+}
+
+.btnprimary:hover {
+	color: #fff;
+	background-color: #286090;
+	border-color: #204d74
+}
+
+.btnprimary.active,
+.btnprimary:active,
+.open>.dropdown-toggle.btnprimary {
+	color: #fff;
+	background-color: #286090;
+	background-image: none;
+	border-color: #204d74
+}
+
+.btnprimary.active.focus,
+.btnprimary.active:focus,
+.btnprimary.active:hover,
+.btnprimary:active.focus,
+.btnprimary:active:focus,
+.btnprimary:active:hover {
+	color: #fff;
+	background-color: #204d74;
+	border-color: #122b40
+}
+
+.btnprimary.disabled.focus,
+.btnprimary.disabled:focus,
+.btnprimary.disabled:hover,
+.btnprimary[disabled].focus,
+.btnprimary[disabled]:focus,
+.btnprimary[disabled]:hover,
+fieldset[disabled] .btnprimary.focus,
+fieldset[disabled] .btnprimary:focus,
+fieldset[disabled] .btnprimary:hover {
+	background-color: #337ab7;
+	border-color: #2e6da4
+}
+
+.btnsuccess {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c
+}
+
+.btnsuccess.focus,
+.btnsuccess:focus {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #255625
+}
+
+.btnsuccess:hover {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #398439
+}
+
+.btnsuccess.active,
+.btnsuccess:active,
+.open>.dropdown-toggle.btnsuccess {
+	color: #fff;
+	background-color: #449d44;
+	background-image: none;
+	border-color: #398439
+}
+
+.btnsuccess.active.focus,
+.btnsuccess.active:focus,
+.btnsuccess.active:hover,
+.btnsuccess:active.focus,
+.btnsuccess:active:focus,
+.btnsuccess:active:hover {
+	color: #fff;
+	background-color: #398439;
+	border-color: #255625
+}
+
+.btnsuccess.disabled.focus,
+.btnsuccess.disabled:focus,
+.btnsuccess.disabled:hover,
+.btnsuccess[disabled].focus,
+.btnsuccess[disabled]:focus,
+.btnsuccess[disabled]:hover,
+fieldset[disabled] .btnsuccess.focus,
+fieldset[disabled] .btnsuccess:focus,
+fieldset[disabled] .btnsuccess:hover {
+	background-color: #5cb85c;
+	border-color: #4cae4c
+}
+
+.btnwarning {
+	color: #fff;
+	background-color: #f0ad4e;
+	border-color: #eea236
+}
+
+.btnwarning.focus,
+.btnwarning:focus {
+	color: #fff;
+	background-color: #ec971f;
+	border-color: #985f0d
+}
+
+.btnwarning:hover {
+	color: #fff;
+	background-color: #ec971f;
+	border-color: #d58512
+}
+
+.btnwarning.active,
+.btnwarning:active,
+.open>.dropdown-toggle.btnwarning {
+	color: #fff;
+	background-color: #ec971f;
+	background-image: none;
+	border-color: #d58512
+}
+
+.btnwarning.active.focus,
+.btnwarning.active:focus,
+.btnwarning.active:hover,
+.btnwarning:active.focus,
+.btnwarning:active:focus,
+.btnwarning:active:hover {
+	color: #fff;
+	background-color: #d58512;
+	border-color: #985f0d
+}
+
+.btnwarning.disabled.focus,
+.btnwarning.disabled:focus,
+.btnwarning.disabled:hover,
+.btnwarning[disabled].focus,
+.btnwarning[disabled]:focus,
+.btnwarning[disabled]:hover,
+fieldset[disabled] .btnwarning.focus,
+fieldset[disabled] .btnwarning:focus,
+fieldset[disabled] .btnwarning:hover {
+	background-color: #f0ad4e;
+	border-color: #eea236
+}
+
+
+.btndanger {
+	color: #fff;
+	background-color: #d9534f;
+	border-color: #d43f3a
+}
+
+.btndanger.focus,
+.btndanger:focus {
+	color: #fff;
+	background-color: #c9302c;
+	border-color: #761c19
+}
+
+.btndanger:hover {
+	color: #fff;
+	background-color: #c9302c;
+	border-color: #ac2925
+}
+
+.btndanger.active,
+.btndanger:active,
+.open>.dropdown-toggle.btndanger {
+	color: #fff;
+	background-color: #c9302c;
+	background-image: none;
+	border-color: #ac2925
+}
+
+.btndanger.active.focus,
+.btndanger.active:focus,
+.btndanger.active:hover,
+.btndanger:active.focus,
+.btndanger:active:focus,
+.btndanger:active:hover {
+	color: #fff;
+	background-color: #ac2925;
+	border-color: #761c19
+}
+
+.btndanger.disabled.focus,
+.btndanger.disabled:focus,
+.btndanger.disabled:hover,
+.btndanger[disabled].focus,
+.btndanger[disabled]:focus,
+.btndanger[disabled]:hover,
+fieldset[disabled] .btndanger.focus,
+fieldset[disabled] .btndanger:focus,
+fieldset[disabled] .btndanger:hover {
+	background-color: #d9534f;
+	border-color: #d43f3a
+}
+
+.btndanger .badge {
+	color: #d9534f;
+	background-color: #fff
+}
+
+.btnlarge{
+  font-size:18px;
+  line-height:1.3333333;
+  border-radius:6px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.btnmedium{
+  padding:5px 10px;
+  font-size:12px;
+  line-height:1.5;
+  border-radius:3px;
+  margin: 3px 3px 3px 3px;
+}
+
+.btnsmall{
+  padding:1px 5px;
+  font-size:12px;
+  line-height:1.5;
+  border-radius:3px
+}
+
+.btnblock {
+	display: block;
+	width: 100%
+}
+
+input[type=button].btn-block,
+input[type=reset].btn-block,
+input[type=submit].btn-block {
+	width: 100%
+}
