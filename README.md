@@ -100,6 +100,10 @@ Material Table is a simple and powerful Datatable for React based on Material-UI
 
 Axios is one of the most popular library to call end-points(API). Axios is a lightweight HTTP client based, promise-based and thus we can take advantage of async and await for more readable asynchronous code. We can also intercept and cancel requests, and there’s built-in client side protection against cross site request forgery. But the best part about Axios? The easy to use API!
 
+### webpack
+
+Webpack is used for bundling and packaging for react application. We have also extended feature which is **react-babel**. We have used **babel-loader** because our application mostly written in JavaScript ES6. ES6 is a nice improvement over the language but older browsers cannot understand the new syntax. So for getting ES6 to work in older browser we need some kind of transformation which is known as **transpiling**.Webpack doesn’t know how to transform ES6 JavaScript to ES5 but it has this concept of loaders. so we have used **babel-loader**.
+
 ### Jest and Enzyme -- For Unit Testing
 
 Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.
@@ -114,9 +118,15 @@ Enzyme, adds some great additional utility methods for rendering a component (or
 
 Both Jest and Enzyme are specifically designed to test React applications, Jest can be used with any other Javascript app but Enzyme only works with React.
 
+## Other Specifications
+
+1. Application is already using linters (ESLint), we can add more rules.
+2. Snappiness and Responsive design
+3. Pre-commit hooks are there
+
 ## Future Steps
 
-1. Directory name **services** can be extended later which generally used to write services at business layer ie. business logics between api and actions.
+1. Directory name **services** can be extend later which generally used to write services at business layer ie. business logics between api and actions.
 2. We can extend the use of **Redux-Persist** to persist the storage of application at different level.
 3. We can extend the use of **Error** component to better handle the exception.
 4. We can add more rules for **ESLint** as per developers convenience
