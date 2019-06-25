@@ -27,21 +27,21 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Lets have some overview of project by directory wise, I am here going to explain some important directories only.
 
-###config
+### config
 
 This directory contains the configuration files at application level
 
 enzyme - This directory contains configuration related with testing
 
-###public
+### public
 
 This directory contains the public resources and index.html which is responsible to execute.
 
-###scripts
+### scripts
 
 This directory contains script files for building, starting and testing the application.
 
-###src
+### src
 
 This directory contains the main source code to run the application, It has different directories, lets go one by one.
 
