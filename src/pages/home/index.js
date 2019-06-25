@@ -1,14 +1,9 @@
 import { connect } from 'react-redux';
 import Home from './home';
-import { logout } from '../login/actions';
 
-const mapStateToProps = state => ({
-  currentUser: state.auth.currentUser
-});
+const mapStateToProps = null;
 
-const mapDispatchToProps = dispatch => ({
-  logout: () => dispatch(logout())
-});
+const mapDispatchToProps = null;
 
 export default connect(
   mapStateToProps,

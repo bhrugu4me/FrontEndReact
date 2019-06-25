@@ -10,34 +10,34 @@ import { persistConfig } from '../config/persist-config';
 
 let store;
 const history =
-  process.env.NODE_ENV === 'test'
-    ? createMemoryHistory()
-    : createBrowserHistory();
+	process.env.NODE_ENV === 'test'
+		? createMemoryHistory()
+		: createBrowserHistory();
 
 const persistedReducer = persistReducer(persistConfig, createReducer(history));
 
 export const configureStore = () => {
-  const middlewares = Array.prototype.concat(
-    [],
-    [thunk, routerMiddleware(history)],
-    process.env.NODE_ENV === 'development' ? [createLogger()] : []
-  );
+	const middlewares = Array.prototype.concat(
+		[],
+		[thunk, routerMiddleware(history)],
+		process.env.NODE_ENV === 'development' ? [createLogger()] : []
+	);
 
-  const composeEnhancers =
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-  const enhancer = composeEnhancers(
-    applyMiddleware(...middlewares),
-    responsiveStoreEnhancer
-  );
+	const composeEnhancers =
+		window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+	const enhancer = composeEnhancers(
+		applyMiddleware(...middlewares),
+		responsiveStoreEnhancer
+	);
 
-  //store = createStore(createReducer(history), enhancer);
-  store = createStore(persistedReducer, enhancer);
-  let persistor = persistStore(store);
-  store.asyncReducers = {};
+	//store = createStore(createReducer(history), enhancer);
+	store = createStore(persistedReducer, enhancer);
+	let persistor = persistStore(store);
+	store.asyncReducers = {};
 
-  return {
-    store,
-    persistor,
-    history
-  };
+	return {
+		store,
+		persistor,
+		history
+	};
 };

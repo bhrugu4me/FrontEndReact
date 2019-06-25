@@ -1,10 +1,7 @@
 import React from 'react';
 
-import Dashboard from './dashboard';
+import Users from './users';
 
-const IconDashboard = (props) => (
-  <Dashboard {...props} />
-);
+const IconUsers = props => <Users {...props} />;
 
-  
-export { IconDashboard };
+export { IconUsers };

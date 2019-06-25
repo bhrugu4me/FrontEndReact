@@ -1,16 +1,13 @@
 @import '../../css/utils';
 
 .home {
-  h1 {
-    font-family: $font-family;
-    font-size: $font-size-desktop-h1;
-    color: $black;
-  }
-  min-height: 500px;
-  height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+	h1 {
+		font-family: $font-family;
+		font-size: $font-size-desktop-h1;
+		color: $black;
+	}
+	min-height: 500px;
+	display: flex;
+
+	justify-content: center;
 }

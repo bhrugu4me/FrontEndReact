@@ -1,28 +1,14 @@
-@import "../../css/utils.scss";
+@import '../../css/utils.scss';
 
 .header {
-  min-height: 63px;
-  display: flex;
-  background: $darkSlateGray;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 10px;
-  padding-bottom: 12px;
-  color: $white;
-  h1 {
-    font-family:  $font-family;
-    font-size: $font-size-mobile-h2;
-  }
-}
-.logo {
-  font-weight: bold;
-  background: $darkSlateGray;
-  color: $white;
-  border: 0;
-  margin-top: 10px;
-  text-align: center;
-  cursor: pointer;
-  min-width:10%;
-  width:10%;
-  text-align: left;
+	min-height: 62px;
+	display: flex;
+	background: $darkSlateGray;
+	padding-top: 12px;
+	color: $white;
+	h1 {
+		font-family: $font-family;
+		font-size: $font-size-mobile-h2;
+	}
+	justify-content: center;
 }
