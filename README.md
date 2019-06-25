@@ -53,15 +53,15 @@ This directory contains the test cases(.test files) and its snapshots. which is 
 
 This directory contains the components which is non-domain and also we can re-use it any where in application e.g. Icons, Buttons, Header, Error etc..
 
-####config
+#### config
 
 This directory contains the configuration files related with API and redux-persist.
 
-####css
+#### css
 
 This directory contains the application level css, e.g. colors, text, size etc..
 
-####pages
+#### pages
 
 This directory contains the pages/views which interacts with the end user. Each page(itself directory) contains domain level files as below.
 -> action-types.js --- defines actions types
@@ -73,26 +73,34 @@ This directory contains the pages/views which interacts with the end user. Each 
 -> pagename.module.scss -- page level style sheet
 -> pagename.routes.js -- route file
 
-####redux
+Two Pages(Views) there as describe below
+
+1. Home ---> Just like dashboard, right now I have illustrate the use for Icons and buttons.
+2. UserList --> list of users which is in requirement. end user can list users, view user detail, search for any user. Extra features like pagination is also there
+
+#### redux
 
 This directory contains redux files and maintain state and store. Its also used **redux-persist**, we can extend it later by defining more persistance criteria like authorization etc...
 
-####router
+#### router
 
 This directory contains the routes of all pages and routing table. There is already secure-route created which we can use later on to define secure routing through out the applications
 
 ## Libraries
 
-###react-redux
+### react-redux
+
 Redux is a state management tool. While it's mostly used with React, With Redux, the state of your application is kept in a store and each component can access any state that it needs from this store.
 
-###material-ui --> material-table
+### material-ui --> material-table
+
 Material Table is a simple and powerful Datatable for React based on Material-UI Table with some additional features. They support many different use cases (editable, filtering, grouping, sorting, selection, i18n, tree data and more)
 
-###axios
+### axios
+
 Axios is one of the most popular library to call end-points(API). Axios is a lightweight HTTP client based, promise-based and thus we can take advantage of async and await for more readable asynchronous code. We can also intercept and cancel requests, and there’s built-in client side protection against cross site request forgery. But the best part about Axios? The easy to use API!
 
-###Jest and Enzyme -- For Unit Testing
+### Jest and Enzyme -- For Unit Testing
 
 Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.
 
@@ -106,7 +114,7 @@ Enzyme, adds some great additional utility methods for rendering a component (or
 
 Both Jest and Enzyme are specifically designed to test React applications, Jest can be used with any other Javascript app but Enzyme only works with React.
 
-##Future Steps
+## Future Steps
 
 1. Directory name **services** can be extended later which generally used to write services at business layer ie. business logics between api and actions.
 2. We can extend the use of **Redux-Persist** to persist the storage of application at different level.
